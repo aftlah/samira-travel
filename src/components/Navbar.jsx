@@ -20,8 +20,8 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <Plane className="h-8 w-8 text-primary" />
-            <span className="ml-2 font-bold text-xl text-secondary">Samira Travel</span>
+            <img src="/images/samira-logo.png" alt="Samira Travel Logo" className="h-12 w-auto" />
+            {/* <span className="ml-2 font-bold text-xl text-secondary">Samira Travel</span> */}
           </div>
           
           <div className="hidden md:flex items-center space-x-8">

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Plane, Facebook, Instagram, Twitter } from 'lucide-react';
+import { Facebook, Instagram, Twitter } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
             <div className="flex items-center mb-4">
-              <Plane className="h-8 w-8 text-primary" />
+              <img src="/images/samira-logo.png" alt="Samira Travel Logo" className="h-10 w-auto" />
               <span className="ml-2 font-bold text-xl">Samira Travel</span>
             </div>
             <p className="text-gray-400 text-sm">
