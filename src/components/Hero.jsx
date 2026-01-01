@@ -21,7 +21,7 @@ const Hero = () => {
         <div className="mt-10 flex gap-4">
           <a
             href="#packages"
-            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-yellow-600 transition-colors duration-300"
+            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-accent transition-colors duration-300"
           >
             Lihat Paket
             <ArrowRight className="ml-2 h-5 w-5" />

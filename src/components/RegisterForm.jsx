@@ -5,7 +5,7 @@ const RegisterForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
-    package: 'Paket Reguler',
+    package: 'Umroh Reguler',
     notes: ''
   });
 
@@ -69,9 +69,11 @@ const RegisterForm = () => {
                 value={formData.package}
                 onChange={handleChange}
               >
-                <option>Paket Reguler</option>
-                <option>Paket VIP</option>
-                <option>Paket Ramadhan</option>
+                <option>Umroh Reguler</option>
+                <option>Umroh Plus Turki</option>
+                <option>Umroh Ramadhan</option>
+                <option>Haji Khusus</option>
+                <option>Haji Furoda</option>
                 <option>Hanya Tanya-tanya Dulu</option>
               </select>
             </div>

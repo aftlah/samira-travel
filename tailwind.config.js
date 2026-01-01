@@ -7,8 +7,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#D4AF37', // Gold color often used in Umrah/Hajj branding
-        secondary: '#0F172A', // Dark blue/slate
+        primary: '#C5A059', // Gold color from logo (approximate)
+        secondary: '#1A1A1A', // Dark color from logo (approximate)
+        accent: '#E6C67E', // Lighter gold for hover/accents
       }
     },
   },

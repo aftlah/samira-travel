@@ -28,7 +28,7 @@ const Profile = () => {
           </div>
           
           <div className="md:w-1/2 space-y-6">
-            <h3 className="text-2xl font-bold text-secondary">Ibu Tatiek</h3>
+            <h3 className="text-2xl font-bold text-secondary">Tatiek</h3>
             <p className="text-lg text-gray-600">
               Sebagai konsultan resmi Samira Travel, saya berdedikasi untuk membantu Anda mewujudkan impian beribadah ke Tanah Suci dengan nyaman dan aman.
             </p>

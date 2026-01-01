@@ -4,49 +4,72 @@ import { Check } from 'lucide-react';
 const Packages = () => {
   const packages = [
     {
-      name: 'Paket Reguler',
-      price: '28.500.000',
-      duration: '9 Hari',
+      name: 'Umroh Reguler',
+      price: '31 Jutaan',
+      duration: '9/12/16 Hari',
+      image: '/images/umroh_reguler.jpeg',
       features: [
-        'Tiket Pesawat PP Ekonomi',
-        'Hotel Bintang 3 (Makkah & Madinah)',
-        'Makan 3x Sehari (Menu Indonesia)',
-        'Visa Umroh & Asuransi',
-        'Pembimbing Ibadah (Muthawif)',
-        'Air Zamzam 5 Liter',
-        'Perlengkapan Umroh Lengkap'
+        '9/12/16 Hari di Tanah Suci',
+        'Hotel Bintang 5-4-3 Nyaman dan Dekat',
+        'Makan 3x Sehari Prasmanan',
+        'Pembimbing Profesional dan Ramah',
+        'Transportasi Nyaman dan Aman'
       ],
       isPopular: false,
     },
     {
-      name: 'Paket VIP',
-      price: '35.000.000',
-      duration: '12 Hari',
+      name: 'Umroh Plus',
+      price: '45 Juta',
+      duration: '12/16 Hari',
+      image: '/images/umrah_plus.jpeg',
       features: [
-        'Tiket Pesawat PP Ekonomi/Bisnis',
-        'Hotel Bintang 5 (Depan Masjid)',
-        'Makan 3x Sehari (Buffet)',
-        'Visa Umroh & Asuransi',
-        'Pembimbing Ibadah Senior',
-        'City Tour Thaif/Jeddah',
-        'Air Zamzam 5 Liter',
-        'Perlengkapan Umroh Premium'
+        '12/16 Hari di Tanah Suci dan Negara Plus',
+        'Hotel Bintang 5',
+        'Makan 3x Sehari Buffet',
+        'Ziarah Ekstensif',
+        'Transportasi Eksklusif'
       ],
       isPopular: true,
     },
     {
-      name: 'Paket Ramadhan',
-      price: '38.000.000',
+      name: 'Umroh Ramadhan',
+      price: '38 Jutaan',
       duration: 'Akhir Ramadhan',
+      image: '/images/umrah_ramadhan.jpeg',
       features: [
-        'Ibadah Lailatul Qadar',
-        'Hotel Bintang 4/5',
-        'Full Ibadah di Masjidil Haram',
+        'Program Ibadah Lailatul Qadar',
+        'Hotel Bintang 5/4 Dekat Masjid',
         'Buka Puasa & Sahur Bersama',
-        'Visa Umroh & Asuransi',
-        'Muthawif Berpengalaman',
-        'Air Zamzam 5 Liter',
-        'Bingkisan Lebaran'
+        'Full Ibadah di Masjidil Haram',
+        'Pembimbing Berpengalaman'
+      ],
+      isPopular: false,
+    },
+    {
+      name: 'Haji Khusus',
+      price: 'USD 17.000',
+      duration: '25-30 Hari',
+      image: '/images/haji_khusus.jpeg',
+      features: [
+        'Program Haji Plus Sesuai KEMENAG RI',
+        'Akomodasi Premium',
+        'Beragam Pilihan Itinerary yang Fleksibel',
+        'Pembimbing Haji Berpengalaman',
+        'Pelayanan Kesehatan'
+      ],
+      isPopular: false,
+    },
+    {
+      name: 'Haji Furoda',
+      price: 'USD 27.576',
+      duration: '25 Hari',
+      image: '/images/haji_furoda.jpeg',
+      features: [
+        'Program Haji Tanpa Antri, RESMI VISA HAJI',
+        'Fleksibilitas Waktu',
+        'Akomodasi Pilihan',
+        'Pendampingan Khusus',
+        'Pelayanan Eksklusif'
       ],
       isPopular: false,
     },
@@ -58,53 +81,48 @@ const Packages = () => {
         <div className="text-center mb-16">
           <h2 className="text-base text-primary font-semibold tracking-wide uppercase">Pilihan Paket</h2>
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            Paket Umroh Terbaik
+            Paket Umroh & Haji
           </p>
           <p className="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
-            Pilih paket yang sesuai dengan kebutuhan dan budget Anda.
+            Pilih paket ibadah yang sesuai dengan kebutuhan dan kenyamanan Anda.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="flex flex-wrap justify-center gap-6">
           {packages.map((pkg, index) => (
             <div 
               key={index} 
-              className={`relative bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col hover:-translate-y-2 transition-transform duration-300 ${
-                pkg.isPopular ? 'ring-2 ring-primary scale-105 md:scale-110 z-10' : ''
-              }`}
+              className="relative bg-white rounded-xl shadow-lg overflow-hidden flex flex-col hover:-translate-y-1 transition-transform duration-300 w-full md:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)] max-w-[340px]"
             >
-              {pkg.isPopular && (
-                <div className="absolute top-0 right-0 bg-primary text-white text-xs font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider">
-                  Terlaris
-                </div>
-              )}
+              <div className="p-3 bg-secondary text-center">
+                <h3 className="text-lg font-bold text-white uppercase tracking-wider">{pkg.name}</h3>
+              </div>
               
-              <div className="p-8 flex-1">
-                <h3 className="text-xl font-bold text-secondary mb-2">{pkg.name}</h3>
-                <div className="flex items-baseline mb-4">
-                  <span className="text-sm font-semibold text-gray-500 mr-1">Rp</span>
-                  <span className="text-4xl font-extrabold text-primary">{pkg.price}</span>
-                </div>
-                <p className="text-gray-500 mb-6 font-medium">{pkg.duration}</p>
+              <div className="h-96 overflow-hidden bg-white mt-3">
+                <img 
+                  src={pkg.image} 
+                  alt={pkg.name} 
+                  className="w-full h-full object-contain transform hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+
+              <div className="p-4 flex-1">
+                <p className="text-gray-500 mb-4 text-sm font-medium text-center">{pkg.duration}</p>
                 
-                <ul className="space-y-4">
+                <ul className="space-y-2">
                   {pkg.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start">
-                      <Check className="h-5 w-5 text-green-500 mr-3 flex-shrink-0" />
-                      <span className="text-gray-600 text-sm">{feature}</span>
+                      <Check className="h-4 w-4 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-600 text-xs leading-snug">{feature}</span>
                     </li>
                   ))}
                 </ul>
               </div>
               
-              <div className="p-8 bg-gray-50 mt-auto">
+              <div className="p-5 pt-0 mt-auto">
                 <a
                   href="#register"
-                  className={`w-full flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md transition-colors duration-300 ${
-                    pkg.isPopular 
-                      ? 'bg-primary text-white hover:bg-yellow-600' 
-                      : 'bg-white text-primary border-primary hover:bg-gray-50'
-                  }`}
+                  className="w-full flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md transition-colors duration-300 bg-white text-primary border-primary hover:bg-gray-50"
                 >
                   Pilih Paket
                 </a>
