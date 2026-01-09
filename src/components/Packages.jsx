@@ -75,7 +75,7 @@ const PACKAGE_DATA = [
 ];
 
 const PackageCard = ({ pkg }) => {
-  const phoneNumber = "6289601701998";
+  const phoneNumber = "6281216165047";
   const whatsappMessage = `Assalamualaikum, saya tertarik dengan paket *${pkg.name}* (${pkg.price}) dan ingin mendapatkan informasi lebih lanjut. Terima kasih.`;
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
