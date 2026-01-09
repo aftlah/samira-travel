@@ -32,7 +32,7 @@ const PACKAGE_DATA = [
   },
   {
     name: 'Umroh Ramadhan',
-    price: '38 Jutaan',
+    price: '32 Jutaan',
     duration: 'Akhir Ramadhan',
     image: '/images/umrah_ramadhan.jpeg',
     features: [
@@ -78,7 +78,7 @@ const PACKAGE_DATA = [
 const PackageCard = ({ pkg }) => {
   return (
     <div className="group relative bg-gradient-to-br from-white to-amber-50/30 rounded-2xl shadow-xl overflow-hidden flex flex-col hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 w-full md:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)] max-w-[340px] border border-amber-100/50">
-      
+
       {/* {pkg.isPopular && (
         <div className="absolute top-4 right-4 z-10 bg-gradient-to-r from-primary via-accent to-amber-400 text-white px-4 py-1.5 rounded-full text-xs font-bold shadow-lg animate-pulse">
           ⭐ POPULER
