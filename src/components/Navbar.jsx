@@ -9,7 +9,7 @@ const Navbar = () => {
   const navItems = [
     { name: 'Beranda', href: '#home' },
     { name: 'Profil', href: '#profile' },
-    { name: 'Paket Umroh', href: '#packages' },
+    { name: 'Pilih Paket', href: '#packages' },
     { name: 'Galeri', href: '#gallery' },
     { name: 'Testimoni', href: '#testimonials' },
     { name: 'Daftar', href: '#register' },
