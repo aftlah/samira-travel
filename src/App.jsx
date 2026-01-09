@@ -5,7 +5,7 @@ import Profile from './components/Profile';
 import Packages from './components/Packages';
 import Gallery from './components/Gallery';
 import Testimonials from './components/Testimonials';
-import RegisterForm from './components/RegisterForm';
+
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
 
@@ -18,7 +18,6 @@ function App() {
       <Packages />
       <Gallery />
       <Testimonials />
-      <RegisterForm />
       <Footer />
       <WhatsAppButton />
     </div>

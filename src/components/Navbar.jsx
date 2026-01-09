@@ -12,7 +12,6 @@ const Navbar = () => {
     { name: 'Pilih Paket', href: '#packages' },
     { name: 'Galeri', href: '#gallery' },
     { name: 'Testimoni', href: '#testimonials' },
-    { name: 'Daftar', href: '#register' },
   ];
 
   return (
@@ -23,7 +22,7 @@ const Navbar = () => {
             <img src="/images/samira-logo.png" alt="Samira Travel Logo" className="h-12 w-auto" />
             {/* <span className="ml-2 font-bold text-xl text-secondary">Samira Travel</span> */}
           </div>
-          
+
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <a
