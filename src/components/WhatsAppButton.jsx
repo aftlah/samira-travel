@@ -2,7 +2,7 @@ import React from 'react';
 import { MessageCircle } from 'lucide-react';
 
 const WhatsAppButton = () => {
-  const phoneNumber = "6281234567890"; // Ganti dengan nomor WA Tatiek yang sebenarnya
+  const phoneNumber = "6281216165047";
   const message = "Assalamualaikum, saya ingin bertanya tentang paket umroh Samira Travel.";
   
   return (
