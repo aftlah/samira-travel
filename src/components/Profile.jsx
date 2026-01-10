@@ -20,7 +20,7 @@ const Profile = () => {
                 <User className="h-32 w-32 text-gray-400" />
               </div>
               <img 
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                src="/images/foto_bunda.jpeg" 
                 alt="Ibu Tatiek" 
                 className="relative w-full h-full object-cover z-10 hover:scale-105 transition-transform duration-500"
               />

@@ -7,6 +7,21 @@ const Navbar = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  const handleNavClick = (e, path) => {
+    // Check if the path contains a hash
+    if (path.includes('#')) {
+      const hash = path.split('#')[1];
+      const element = document.getElementById(hash);
+
+      // If we're already on the home page and the element exists, scroll smoothly
+      if (window.location.pathname === '/' && element) {
+        e.preventDefault();
+        element.scrollIntoView({ behavior: 'smooth' });
+        setIsOpen(false);
+      }
+    }
+  };
+
   const navItems = [
     { name: 'Beranda', path: '/#home' },
     { name: 'Profil', path: '/#profile' },
@@ -29,6 +44,7 @@ const Navbar = () => {
               <Link
                 key={item.name}
                 to={item.path}
+                onClick={(e) => handleNavClick(e, item.path)}
                 className="text-gray-600 hover:text-primary transition-colors duration-300 font-medium"
               >
                 {item.name}
@@ -56,7 +72,7 @@ const Navbar = () => {
                 key={item.name}
                 to={item.path}
                 className="block px-3 py-2 text-base font-medium text-gray-600 hover:text-primary hover:bg-gray-50 rounded-md"
-                onClick={() => setIsOpen(false)}
+                onClick={(e) => handleNavClick(e, item.path)}
               >
                 {item.name}
               </Link>
